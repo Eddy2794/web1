@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TP1-HTML&CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="inicio">
+<!--header-->
+<div id="header">
+  <div id="logo">
+     <h1>Instituto de Capacitación Laboral</h1>
+  </div>
+</div>
+<!--Navegación-->
+<div id="nav">
+<ul class="menu">
+  <li><a href="inicio.html">INICIO</a></li>
+  <li><a href="galeria.html">GALERIA</a></li>
+  <li><a href="registrese.html">REGISTRESE</a></li>
+</ul>
+</div>
+
+<!--Banner-->
+<section class="banner" style="height: 600px;">
+<div class="text-container">
+  <header>
+    <h2 class="banner-title">Instituto de Capacitación - TP1 </h2>
+    <p class="mx-auto banner-subtitle">Punto 2 TP1 Programacion y Servicios Web</p>
+  </header>
+</div>
+<img src="https://images.squarespace-cdn.com/content/53aadf1de4b0a0a817640cca/1603687543447-9CX18N8BVUC4TS6ILRPK/iStock-1279316359.jpg?content-type=image%2Fjpeg" alt="Imagen de Capacitación">
+</section>
+
+    <!--Formulario Registro-->
+    <form action="" id="registro" class="registro">
+      <h3 class="form-h3">Formulario de Registro</h3>
+      <p>Apellido </p><input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required class="form-ing">
+      <p>Nombres </p><input type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres" required class="form-ing">
+      <p>Celular</p> <input type="number" name="celular" id="celular" placeholder="Ingrese su número de celular" required class="form-ing">
+      <p>Compañia </p>
+      <select name=compañia class="form-ing lista"> 
+        <option value="0" selected>Seleccione... 
+        <option value="1">Personal
+        <option value="2">Claro
+        <option value="3">Movistar
+        <option value="4">Tuenti
+      </select>
+      <p>E-Mail </p><input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required class="form-ing">
+      <p>Genero</p><div class="form-ing"><input type="radio" name="genero" id="genero" class="radio">M
+                    <input type="radio" name="genero" id="genero" class="radio">F</div>
+      <p>Fecha de Nacimiento: </p><input type="date" name="fecha" id="fecha"  required class="form-ing">
+      <p>Dispositivos que dispone: </p> <div class="form-ing"><input type="checkbox" id="dispositivo1"> PC </br>
+                                        <input type="checkbox" id="dispositivo1"> Notebook </br>
+                                        <input type="checkbox" id="dispositivo1"> Celular </br>
+                                      </div>
+      <div class="botones">
+        <input type="submit" value="Enviar" class="enviar">
+        <input type="reset" value="Cancelar" class="cancel">
+      </div>
+      </form>
+
+    <!--Footer-->
+
+    <footer class="footer">
+      <p>Copyright © 2021 Edgardo Mamani - LU:3824</p>
+    </footer>
+</body>
+</html>
